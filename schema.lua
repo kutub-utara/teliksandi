@@ -8,7 +8,12 @@ return {
             type = "record",
             fields = {
               { name = { type = "string", required = true}, },
-              { validate_endpoint = { type = "string", required= true}, },              
+              { validate_endpoint = { type = "string", required= true}, },
+              { redis = { type = "boolean", default = true}, },           
+              { redis_host = { type = "string", default = "127.0.0.1"}, },
+              { redis_port = { type = "string", default = "6379"}, },   
+              { redis_password = { type = "string", default = "secret"}, },
+              { redis_expire = { type = "string", default = "60"}, },
             },
           },
         },
