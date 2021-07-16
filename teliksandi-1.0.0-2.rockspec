@@ -7,7 +7,7 @@ package = package_name
 version = package_version .. "-" .. rockspec_revision
 supported_platforms = { "linux", "macosx" }
 source = {
-  url = "https://github.com/stackdev7/teliksandi.git",
+  url = "git://github.com/stackdev7/teliksandi",
   branch = "master",
 }
 
